@@ -1,6 +1,6 @@
 <section class="page-content">
     <div class="in-box">
-        <p class="intoro-text">エクセレンスは、CADに関わるすべての皆様へのソリューション提供を目指し、<br>  CAD人材の派遣・紹介事業、及びCAD製図事業を行っております。</p>
+        <p class="intoro-text">エクセレンスは、CADに関わるすべての皆様へ<br class="sp">のソリューション提供を目指し、<br>CAD人材の派遣・紹介事業、及びCAD製図事業を<br class="sp">行っております。</p>
         <ul class="company-ul-flex">
             <li>
                 <h2 class="section-title">
@@ -54,11 +54,11 @@
                 </li>
                 <li>
                     <span>登記本店</span>
-                    <span>東京都豊島区東池袋2-62-10 池袋5thビル8F</span>
+                    <span>東京都豊島区東池袋2-62-10 <br class="sp">池袋5thビル8F</span>
                 </li>
                 <li>
                     <span>連絡先</span>
-                    <span>TEL 03-6382-5535(代表) FAX 03-6382-5536</span>
+                    <span>TEL 03-6382-5535(代表) <br class="sp">FAX 03-6382-5536</span>
                 </li>
                 <li>
                     <span>URL</span>

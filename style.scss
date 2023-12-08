@@ -517,6 +517,11 @@ object {
 	}
 }
 .top {
+	@include mq(sp) {
+		.nav-box {
+			background: none;
+		}
+	}
 	.mv-box {
 		position: relative;
 		height: 95rem;
@@ -548,7 +553,7 @@ object {
 	background: rgba(255,255,255,0.7);
 	@include mq(sp) {
 		padding: 0 0 0 3.5rem;
-		background: none;
+		background: $color-white;
 	}
   ul {
     display: flex;
@@ -1163,11 +1168,17 @@ input[type=submit],
 		margin: 0;
 		line-height: 1em;
 		font-size: 1.6rem;
+		@include mq(sp) {
+			font-size: 4rem;
+		}
 	}
 }
 .mv-sub-box {
 	padding: 17rem 0 7rem;
 	background: url(img/mv-bg-01.jpg) no-repeat top center/cover;
+	@include mq(sp) {
+		margin-top: 16rem;
+	}
 	.section-title {
 		&::before,
 		&::after {
@@ -1176,7 +1187,15 @@ input[type=submit],
 		.txt-e {
 			font-size: 2rem;
 			line-height: 1em;
-			color: $color-orange-3;
+			display: inline-block;
+  		background: linear-gradient(90deg, $color-orange-3 , $color-orange-4);
+  		background: -webkit-linear-gradient(0deg,$color-orange-3 , $color-orange-4);
+  		background-clip: text;
+  		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+			@include mq(sp) {
+				font-size: 4rem;
+			}
 		}
 		.txt-j {
 			font-size: 5rem;
@@ -1185,11 +1204,21 @@ input[type=submit],
 			line-height: 2em;
 			width: 100%;
 			color: $color-white;
+			@include mq(sp) {
+				font-size: 6rem;
+			}
 		}
 	}
 }
-.company .mv-sub-box {
-	background-image: url(img/mv-bg-01.jpg);
+.company {
+	.mv-sub-box {
+		background-image: url(img/mv-bg-01.jpg);
+	}
+	@include mq(sp) {
+		.section-title_jobinfo {
+			width: 85rem;
+		}
+	}
 }
 .recruit .mv-sub-box {
 	background-image: url(img/mv-bg-02.jpg);
@@ -1888,6 +1917,9 @@ p {
 	font-size: 2rem;
 	font-weight: bold;
 	line-height: 2.3em;
+	@include mq(sp) {
+		font-size: 4.5rem;
+	}
 }
 .company-ul-flex {
 	padding-bottom: 16rem;
@@ -1895,14 +1927,24 @@ p {
 		width: 95%;
 		margin: auto;
 	}
+	@include mq(sp) {
+		width: 90%;
+	}
 	li {
 		display: flex;
 		justify-content: space-between;
 		padding-bottom: 8rem;
+		@include mq(sp) {
+			display: block;
+			padding-bottom: 16rem;
+		}
 	}
 	.section-title {
 		width: 27%;
-		&::before,
+		@include mq(sp) {
+			width: 100%;
+		}
+			&::before,
 		&::after {
 			content: none;
 		}
@@ -1913,6 +1955,9 @@ p {
 		line-height: 1.95em;
 		padding-bottom: 8rem;
     border-bottom: 2px solid;
+		@include mq(sp) {
+			width: 100%;
+		}
 		.text-left {
 			display: block;
 			text-align: right;
@@ -1923,11 +1968,17 @@ p {
     display: block;
     font-size: 1.9rem;
     line-height: 1.6em;
+		@include mq(sp) {
+			font-size: 4rem;
+		}
 	}
 	.txt-j {
     font-size: 4rem;
     text-align: left;
     font-weight: bold;
+		@include mq(sp) {
+			font-size: 6rem;
+		}
 	}
 	.philosophy-text {
 		font-size: 3.6rem;
@@ -1950,6 +2001,10 @@ p {
 			width: 23em;
 			background: linear-gradient(90deg,$color-white 85%, transparent);
 			margin-bottom: 1.3rem;
+			@include mq(sp) {
+				width: 100%;
+				font-size: 4.5rem;
+			}
 			img {
 				margin-right: 0.5em;
 			}
@@ -1965,6 +2020,9 @@ p {
 	ul {
 		width: 86%;
 		margin: auto;
+		@include mq(sp) {
+			padding: 10rem 0 12rem;
+		}
 		li {
 			display: flex;
 			font-size: 1.9rem;
@@ -1974,6 +2032,9 @@ p {
 			span {
 				width: 76%;
 				line-height: 1.7em;
+				@include mq(sp) {
+					font-size: 4rem;
+				}
 				&:first-child {
 					width: 24%;
 					font-weight: bold;
@@ -2023,6 +2084,9 @@ p {
 	.section-title {
 		text-align: left;
 		padding-bottom: 7rem;
+		@include mq(sp) {
+			padding-bottom: 26rem;
+		}
 		&::before,
 		&::after {
 			content: none;
@@ -2058,6 +2122,11 @@ p {
 			left: 69.5%;
     	width: 48rem;
 		}
+		@include mq(sp) {
+			left: 47.5%;
+			width: 50rem;
+			top: 32rem;
+		}
 	}
 	.bg-img-3 {
 		position: absolute;
@@ -2067,12 +2136,18 @@ p {
 			bottom: -13rem;
 			width: 36rem;
 		}
+		@include mq(sp) {
+			display: none;
+		}
 	}
 	.button-box {
 		padding: 5rem 0 3rem;
 		a {
 			margin: 0;
 			width: 17.6em;
+			@include mq(sp) {
+				width: 100%;
+			}
 		}
 	}
 }
@@ -2114,6 +2189,10 @@ p {
     letter-spacing: 0.04em;
 		z-index: 1;
     position: relative;
+		@include mq(sp) {
+			font-size: 4rem;
+			padding-right: 4rem;
+		}
 	}
 	.bg-img {
 		top: 12rem;
@@ -2134,6 +2213,9 @@ p {
     border-radius: 5rem;
 		background: $color-white;
 		z-index: 0;
+		@include mq(sp) {
+			height: 57.5rem;
+		}
 	}
 }
 .profile-text {
@@ -2147,11 +2229,17 @@ p {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	@include mq(sp) {
+		width: 90%;
+	}
 	&::after {
 		content: none;
 	}
 	.section-title {
 		text-align: left;
+		@include mq(sp) {
+			margin-top: 8rem;
+		}
 		&::before,
 		&::after {
 			content: none;
@@ -2161,11 +2249,17 @@ p {
 		font-size: 2rem;
 		letter-spacing: 0.08em;
 		color: $color-blue-5;
+		@include mq(sp) {
+			font-size: 4rem;
+		}
 	}
 	.txt-j {
 		font-size: 4.5rem;
 		font-weight: bold;
 		line-height: 2.7em;
+		@include mq(sp) {
+			font-size: 6rem;
+		}
 	}
 	p {
 		padding: 0;
@@ -2174,6 +2268,9 @@ p {
     letter-spacing: 0;
     padding-top: 1rem;
     line-height: 2.3em;
+		@include mq(sp) {
+			font-size: 4rem;
+		}
 	}
 	.bg-img {
 		top: -19rem;
@@ -2192,6 +2289,10 @@ p {
 		width: 95%;
 		margin: auto;
 	}
+	@include mq(sp) {
+		padding: 52rem 0 10rem 11.5%;
+		width: 90%;
+	}
 	&::after {
 		content: none;
 	}
@@ -2209,20 +2310,34 @@ p {
 			margin-bottom: 1.9rem;
 			display: flex;
     	align-items: center;
+			@include mq(sp) {
+				font-size: 4rem;
+			}
 			img {
 				margin-right: 0.5em;
+				@include mq(sp) {
+					width: 7rem;
+				}
 			}
 		}
 	}
 	.bg-img {
 		top: 3rem;
 		left: 0;
+		@include mq(sp) {
+			top: 7rem;
+			width: 100%;
+		}
 	}
 	.til-img {
 		top: 0;
     left: 47%;	
 		@include mq(tab) {
 			left: 58%;
+		}
+		@include mq(sp) {
+			left: 79%;
+    	width: 25%;
 		}
 	}
 }
@@ -2239,11 +2354,17 @@ p {
 		font-size: 2rem;
 		letter-spacing: 0.08em;
 		color: $color-blue-5;
+		@include mq(sp) {
+			font-size: 4rem;
+		}
 	}
 	.txt-j {
 		font-size: 3.5rem;
 		font-weight: bold;
 		line-height: 2.4em;
+		@include mq(sp) {
+			font-size: 6rem;
+		}
 	}
 	ul {
 		padding: 3.5rem 0 0;
@@ -2252,9 +2373,15 @@ p {
 			width: 95%;
 			margin: auto;
 		}
+		@include mq(sp) {
+			width: 90%;
+		}
 		li {
 			display: flex;
 			font-size: 2rem;
+			@include mq(sp) {
+				font-size: 4rem;
+			}
 			span {
 				width: 74%;
 				padding: 1em 1em 1.13em 1.5em;
@@ -2294,6 +2421,13 @@ p {
 			margin-left: auto;
 			margin-right: auto;
 		}
+		@include mq(sp) {
+			width: 90%;
+			padding: 8rem;
+			img {
+				width: 30%;
+			}
+		}
 		p {
 			text-align: left;
 			margin: 0;
@@ -2304,11 +2438,17 @@ p {
 				font-size: 2.6rem;
 				font-weight: bold;
 				line-height: 2.3em;
+				@include mq(sp) {
+					font-size: 4rem;
+				}
 			}
 		}
 	}
 	.text-small {
     font-size: 1.6rem;
+		@include mq(sp) {
+			font-size: 3rem;
+		}
 	}
 }
 .service {
@@ -2320,6 +2460,9 @@ p {
 	}
 	.human-capital-text {
     padding: 8rem 0 8rem 11.5rem;
+		@include mq(sp) {
+			padding-right: 8rem;
+		}
 		.til-img {
 			top: -4.5rem;
 			left: 33%;
@@ -2328,13 +2471,23 @@ p {
 	.drafting-text {
 		margin: 18rem 44% 18rem 0;
     padding-bottom: 5rem;
+		@include mq(sp) {
+			margin-right: 6.5%;
+			margin-top: 60rem;
+		}
 		.bg-img {
 			top: -7rem;
+			@include mq(sp) {
+				top: -50rem;
+			}	
 		}
 		.button-box {
 			a {
 				margin: 4.6rem 0 0;
 				width: 32rem;
+				@include mq(sp) {
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -2347,22 +2500,40 @@ p {
 	padding: 7rem 49% 5rem 4.5rem;
 	background: $color-white;
 	border-radius: 5rem;
+	@include mq(sp) {
+		margin: 35rem 6.5% 33rem;
+    padding: 8rem;
+	}
 	.bg-img {
 		position: absolute;
 		top: -7rem;
     left: 58%;
 		z-index: 0;
+		@include mq(sp) {
+			top: -28rem;
+			left: 56%;
+			width: 40%;
+		}
 	}
 	.button-box {
-	a {
-		margin: 3.9rem 0 0;
-    width: 32rem;
+		a {
+			margin: 3.9rem 0 0;
+    	width: 32rem;
+			@include mq(sp) {
+				width: 100%;
+			}
 		}
 	}
 }
 .introduction-text {
 	margin-top: 0;
 	padding: 7rem 4.5rem 5rem 49%;
+	@include mq(sp) {
+		padding: 8rem;
+		.in-box-title {
+			text-align: right;
+		}
+	}
 	.bg-img {
     left: auto;
 		right: 59%;
@@ -2371,6 +2542,10 @@ p {
 }
 .regular-text {
 	margin: 0 0 10rem;
+	@include mq(sp) {
+		margin-left: 6.5%;
+		margin-right: 6.5%;
+	}
 }
 .detail {
 	.intoro-text {

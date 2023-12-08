@@ -510,6 +510,11 @@ object {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .top .nav-box {
+    background: none;
+  }
+}
 .top .mv-box {
   position: relative;
   height: 95rem;
@@ -545,7 +550,7 @@ object {
 @media screen and (max-width: 767px) {
   .nav-box {
     padding: 0 0 0 3.5rem;
-    background: none;
+    background: #ffffff;
   }
 }
 .nav-box ul {
@@ -1193,10 +1198,20 @@ input[type=submit]:hover,
   line-height: 1em;
   font-size: 1.6rem;
 }
+@media screen and (max-width: 767px) {
+  .breadcrumb p {
+    font-size: 4rem;
+  }
+}
 
 .mv-sub-box {
   padding: 17rem 0 7rem;
   background: url(img/mv-bg-01.jpg) no-repeat top center/cover;
+}
+@media screen and (max-width: 767px) {
+  .mv-sub-box {
+    margin-top: 16rem;
+  }
 }
 .mv-sub-box .section-title::before, .mv-sub-box .section-title::after {
   content: none;
@@ -1204,7 +1219,17 @@ input[type=submit]:hover,
 .mv-sub-box .section-title .txt-e {
   font-size: 2rem;
   line-height: 1em;
-  color: #ECC196;
+  display: inline-block;
+  background: linear-gradient(90deg, #ECC196, #f4887e);
+  background: -webkit-linear-gradient(0deg, #ECC196, #f4887e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 767px) {
+  .mv-sub-box .section-title .txt-e {
+    font-size: 4rem;
+  }
 }
 .mv-sub-box .section-title .txt-j {
   font-size: 5rem;
@@ -1214,9 +1239,19 @@ input[type=submit]:hover,
   width: 100%;
   color: #ffffff;
 }
+@media screen and (max-width: 767px) {
+  .mv-sub-box .section-title .txt-j {
+    font-size: 6rem;
+  }
+}
 
 .company .mv-sub-box {
   background-image: url(img/mv-bg-01.jpg);
+}
+@media screen and (max-width: 767px) {
+  .company .section-title_jobinfo {
+    width: 85rem;
+  }
 }
 
 .recruit .mv-sub-box {
@@ -2070,6 +2105,11 @@ p {
   font-weight: bold;
   line-height: 2.3em;
 }
+@media screen and (max-width: 767px) {
+  .intoro-text {
+    font-size: 4.5rem;
+  }
+}
 
 .company-ul-flex {
   padding-bottom: 16rem;
@@ -2080,13 +2120,29 @@ p {
     margin: auto;
   }
 }
+@media screen and (max-width: 767px) {
+  .company-ul-flex {
+    width: 90%;
+  }
+}
 .company-ul-flex li {
   display: flex;
   justify-content: space-between;
   padding-bottom: 8rem;
 }
+@media screen and (max-width: 767px) {
+  .company-ul-flex li {
+    display: block;
+    padding-bottom: 16rem;
+  }
+}
 .company-ul-flex .section-title {
   width: 27%;
+}
+@media screen and (max-width: 767px) {
+  .company-ul-flex .section-title {
+    width: 100%;
+  }
 }
 .company-ul-flex .section-title::before, .company-ul-flex .section-title::after {
   content: none;
@@ -2098,6 +2154,11 @@ p {
   padding-bottom: 8rem;
   border-bottom: 2px solid;
 }
+@media screen and (max-width: 767px) {
+  .company-ul-flex p {
+    width: 100%;
+  }
+}
 .company-ul-flex p .text-left {
   display: block;
   text-align: right;
@@ -2108,10 +2169,20 @@ p {
   font-size: 1.9rem;
   line-height: 1.6em;
 }
+@media screen and (max-width: 767px) {
+  .company-ul-flex .txt-e {
+    font-size: 4rem;
+  }
+}
 .company-ul-flex .txt-j {
   font-size: 4rem;
   text-align: left;
   font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .company-ul-flex .txt-j {
+    font-size: 6rem;
+  }
 }
 .company-ul-flex .philosophy-text {
   font-size: 3.6rem;
@@ -2136,6 +2207,12 @@ p {
   background: linear-gradient(90deg, #ffffff 85%, transparent);
   margin-bottom: 1.3rem;
 }
+@media screen and (max-width: 767px) {
+  .company-ul-flex .principle-list span {
+    width: 100%;
+    font-size: 4.5rem;
+  }
+}
 .company-ul-flex .principle-list span img {
   margin-right: 0.5em;
 }
@@ -2151,6 +2228,11 @@ p {
   width: 86%;
   margin: auto;
 }
+@media screen and (max-width: 767px) {
+  .detail-inner ul {
+    padding: 10rem 0 12rem;
+  }
+}
 .detail-inner ul li {
   display: flex;
   font-size: 1.9rem;
@@ -2161,6 +2243,11 @@ p {
 .detail-inner ul li span {
   width: 76%;
   line-height: 1.7em;
+}
+@media screen and (max-width: 767px) {
+  .detail-inner ul li span {
+    font-size: 4rem;
+  }
 }
 .detail-inner ul li span:first-child {
   width: 24%;
@@ -2213,6 +2300,11 @@ p {
   text-align: left;
   padding-bottom: 7rem;
 }
+@media screen and (max-width: 767px) {
+  .sosial-inner .section-title {
+    padding-bottom: 26rem;
+  }
+}
 .sosial-inner .section-title::before, .sosial-inner .section-title::after {
   content: none;
 }
@@ -2255,6 +2347,13 @@ p {
     width: 48rem;
   }
 }
+@media screen and (max-width: 767px) {
+  .sosial-inner .bg-img-2 {
+    left: 47.5%;
+    width: 50rem;
+    top: 32rem;
+  }
+}
 .sosial-inner .bg-img-3 {
   position: absolute;
   bottom: -17rem;
@@ -2266,12 +2365,22 @@ p {
     width: 36rem;
   }
 }
+@media screen and (max-width: 767px) {
+  .sosial-inner .bg-img-3 {
+    display: none;
+  }
+}
 .sosial-inner .button-box {
   padding: 5rem 0 3rem;
 }
 .sosial-inner .button-box a {
   margin: 0;
   width: 17.6em;
+}
+@media screen and (max-width: 767px) {
+  .sosial-inner .button-box a {
+    width: 100%;
+  }
 }
 
 .recruit .page-content .content-inner {
@@ -2320,6 +2429,13 @@ p {
   z-index: 1;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .profile-text p,
+  .growth-text p {
+    font-size: 4rem;
+    padding-right: 4rem;
+  }
+}
 .profile-text .bg-img,
 .growth-text .bg-img {
   top: 12rem;
@@ -2345,6 +2461,12 @@ p {
   background: #ffffff;
   z-index: 0;
 }
+@media screen and (max-width: 767px) {
+  .profile-text::after,
+  .growth-text::after {
+    height: 57.5rem;
+  }
+}
 
 .profile-text {
   margin: 31rem 0 3.5rem;
@@ -2360,11 +2482,21 @@ p {
     margin-right: auto;
   }
 }
+@media screen and (max-width: 767px) {
+  .profile-text {
+    width: 90%;
+  }
+}
 .profile-text::after {
   content: none;
 }
 .profile-text .section-title {
   text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .profile-text .section-title {
+    margin-top: 8rem;
+  }
 }
 .profile-text .section-title::before, .profile-text .section-title::after {
   content: none;
@@ -2374,10 +2506,20 @@ p {
   letter-spacing: 0.08em;
   color: #40C2C8;
 }
+@media screen and (max-width: 767px) {
+  .profile-text .txt-e {
+    font-size: 4rem;
+  }
+}
 .profile-text .txt-j {
   font-size: 4.5rem;
   font-weight: bold;
   line-height: 2.7em;
+}
+@media screen and (max-width: 767px) {
+  .profile-text .txt-j {
+    font-size: 6rem;
+  }
 }
 .profile-text p {
   padding: 0;
@@ -2386,6 +2528,11 @@ p {
   letter-spacing: 0;
   padding-top: 1rem;
   line-height: 2.3em;
+}
+@media screen and (max-width: 767px) {
+  .profile-text p {
+    font-size: 4rem;
+  }
 }
 .profile-text .bg-img {
   top: -19rem;
@@ -2409,6 +2556,12 @@ p {
     margin: auto;
   }
 }
+@media screen and (max-width: 767px) {
+  .team-text {
+    padding: 52rem 0 10rem 11.5%;
+    width: 90%;
+  }
+}
 .team-text::after {
   content: none;
 }
@@ -2428,12 +2581,28 @@ p {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .team-text p span {
+    font-size: 4rem;
+  }
+}
 .team-text p span img {
   margin-right: 0.5em;
+}
+@media screen and (max-width: 767px) {
+  .team-text p span img {
+    width: 7rem;
+  }
 }
 .team-text .bg-img {
   top: 3rem;
   left: 0;
+}
+@media screen and (max-width: 767px) {
+  .team-text .bg-img {
+    top: 7rem;
+    width: 100%;
+  }
 }
 .team-text .til-img {
   top: 0;
@@ -2442,6 +2611,12 @@ p {
 @media screen and (max-width: 1200px) {
   .team-text .til-img {
     left: 58%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .team-text .til-img {
+    left: 79%;
+    width: 25%;
   }
 }
 
@@ -2457,10 +2632,20 @@ p {
   letter-spacing: 0.08em;
   color: #40C2C8;
 }
+@media screen and (max-width: 767px) {
+  .table-inner .txt-e {
+    font-size: 4rem;
+  }
+}
 .table-inner .txt-j {
   font-size: 3.5rem;
   font-weight: bold;
   line-height: 2.4em;
+}
+@media screen and (max-width: 767px) {
+  .table-inner .txt-j {
+    font-size: 6rem;
+  }
 }
 .table-inner ul {
   padding: 3.5rem 0 0;
@@ -2472,9 +2657,19 @@ p {
     margin: auto;
   }
 }
+@media screen and (max-width: 767px) {
+  .table-inner ul {
+    width: 90%;
+  }
+}
 .table-inner ul li {
   display: flex;
   font-size: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .table-inner ul li {
+    font-size: 4rem;
+  }
 }
 .table-inner ul li span {
   width: 74%;
@@ -2517,6 +2712,15 @@ p {
     margin-right: auto;
   }
 }
+@media screen and (max-width: 767px) {
+  .entry-inner .in-box-inner {
+    width: 90%;
+    padding: 8rem;
+  }
+  .entry-inner .in-box-inner img {
+    width: 30%;
+  }
+}
 .entry-inner .in-box-inner p {
   text-align: left;
   margin: 0;
@@ -2529,8 +2733,18 @@ p {
   font-weight: bold;
   line-height: 2.3em;
 }
+@media screen and (max-width: 767px) {
+  .entry-inner .in-box-inner p span {
+    font-size: 4rem;
+  }
+}
 .entry-inner .text-small {
   font-size: 1.6rem;
+}
+@media screen and (max-width: 767px) {
+  .entry-inner .text-small {
+    font-size: 3rem;
+  }
 }
 
 .service .content-inner {
@@ -2542,6 +2756,11 @@ p {
 .service .human-capital-text {
   padding: 8rem 0 8rem 11.5rem;
 }
+@media screen and (max-width: 767px) {
+  .service .human-capital-text {
+    padding-right: 8rem;
+  }
+}
 .service .human-capital-text .til-img {
   top: -4.5rem;
   left: 33%;
@@ -2550,12 +2769,28 @@ p {
   margin: 18rem 44% 18rem 0;
   padding-bottom: 5rem;
 }
+@media screen and (max-width: 767px) {
+  .service .drafting-text {
+    margin-right: 6.5%;
+    margin-top: 60rem;
+  }
+}
 .service .drafting-text .bg-img {
   top: -7rem;
+}
+@media screen and (max-width: 767px) {
+  .service .drafting-text .bg-img {
+    top: -50rem;
+  }
 }
 .service .drafting-text .button-box a {
   margin: 4.6rem 0 0;
   width: 32rem;
+}
+@media screen and (max-width: 767px) {
+  .service .drafting-text .button-box a {
+    width: 100%;
+  }
 }
 
 .regular-text,
@@ -2567,6 +2802,14 @@ p {
   background: #ffffff;
   border-radius: 5rem;
 }
+@media screen and (max-width: 767px) {
+  .regular-text,
+  .introduction-text,
+  .dispatch-text {
+    margin: 35rem 6.5% 33rem;
+    padding: 8rem;
+  }
+}
 .regular-text .bg-img,
 .introduction-text .bg-img,
 .dispatch-text .bg-img {
@@ -2575,16 +2818,40 @@ p {
   left: 58%;
   z-index: 0;
 }
+@media screen and (max-width: 767px) {
+  .regular-text .bg-img,
+  .introduction-text .bg-img,
+  .dispatch-text .bg-img {
+    top: -28rem;
+    left: 56%;
+    width: 40%;
+  }
+}
 .regular-text .button-box a,
 .introduction-text .button-box a,
 .dispatch-text .button-box a {
   margin: 3.9rem 0 0;
   width: 32rem;
 }
+@media screen and (max-width: 767px) {
+  .regular-text .button-box a,
+  .introduction-text .button-box a,
+  .dispatch-text .button-box a {
+    width: 100%;
+  }
+}
 
 .introduction-text {
   margin-top: 0;
   padding: 7rem 4.5rem 5rem 49%;
+}
+@media screen and (max-width: 767px) {
+  .introduction-text {
+    padding: 8rem;
+  }
+  .introduction-text .in-box-title {
+    text-align: right;
+  }
 }
 .introduction-text .bg-img {
   left: auto;
@@ -2594,6 +2861,12 @@ p {
 
 .regular-text {
   margin: 0 0 10rem;
+}
+@media screen and (max-width: 767px) {
+  .regular-text {
+    margin-left: 6.5%;
+    margin-right: 6.5%;
+  }
 }
 
 .detail .intoro-text {

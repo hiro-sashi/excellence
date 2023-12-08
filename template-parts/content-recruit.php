@@ -95,17 +95,17 @@
                 <span class="txt-e">ENTRY</span>
                 <span class="txt-j">応募方法</span>
             </h2>
-            <p>郵送にて、履歴書(写真貼付)・職務経歴書を下記の宛先までお送りください。お電話でのお問い合わせも承ります。</p>
+            <p>郵送にて、履歴書(写真貼付)・職務経歴書を<br class="sp">下記の宛先までお送りください。<br class="sp">お電話でのお問い合わせも承ります。</p>
             <div class="in-box-inner">
                 <img src="<?= esc_url(get_template_directory_uri()) ?>/img/recruit-img-05.png" alt="">
                 <p>
                     <span>郵送先</span>
-                    〒170-0013 東京都豊島区東池袋2-62-10　池袋5thビル8F <br>
-                    株式会社 エクセレンス 総務部人事課宛<br>
+                    〒170-0013 <br class="sp">東京都豊島区東池袋2-62-10　<br class="sp">池袋5thビル8F <br>
+                    株式会社 エクセレンス <br class="sp">総務部人事課宛<br>
                     電話：03-6382-5535
                 </p>
             </div>
-            <p class="text-small">※書類選考の上、面接日を通知いたします。 ※応募の秘密は厳守いたします。 ※郵送にて頂いた書類は返却いたしませんのでご了承ください。</p>
+            <p class="text-small">※書類選考の上、面接日を通知いたします。 <br class="sp">※応募の秘密は厳守いたします。 <br class="sp">※郵送にて頂いた書類は返却いたしませんのでご了承ください。</p>
         </div>
     </div>
 </section>
